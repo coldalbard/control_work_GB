@@ -1,42 +1,42 @@
-class Note(object):
-    def __init__(self, id, title, text, date):
-        self.id = id
-        self.title = title
-        self.text = text
-        self.date = date
+class Note:
+    def __init__(self, id: int, title: str, text: str, date: str):
+        self.__id: int = id
+        self.__title: str = title
+        self.__text: str = text
+        self.__date: str = date
 
     @property
     def id(self):
-        return self.id
+        return self.__id
 
     @id.setter
-    def id(self, id):
-        self.id = id
+    def id(self, id: int):
+        self.__id: int = id
 
     @property
     def title(self):
-        return self.title
+        return self.__title
 
     @title.setter
-    def title(self, title):
-        self.title = title
+    def title(self, title: str):
+        self.__title: str = title
 
     @property
     def text(self):
-        return self.text
+        return self.__text
 
     @text.setter
-    def text(self, text):
-        self.text = text
+    def text(self, text: str):
+        self.__text: str = text
 
     @property
     def date(self):
-        return self.date
+        return self.__date
 
     @date.setter
-    def date(self, date):
-        self.date = date
+    def date(self, date: str):
+        self.__date: str = date
 
     def __str__(self):
-        return f'\nЗаметка: {self.id}\nДата создания(редактирования):' \
-               f' {self.date}\nЗаголовок: {self.title}\nТело: {self.text}\n'
+        return f'\nЗаметка: {self.id}\nДата создания:' \
+               f' {self.__date}\nЗаголовок: {self.__title}\nТело: {self.__text}\n'
