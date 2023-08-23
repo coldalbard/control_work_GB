@@ -24,7 +24,7 @@ class View:
         search_id = int(input("Enter the id of the note to search for: "))
         return search_id
 
-    def update_note(self) -> tuple[str, str, str]:
+    def update_note(self) -> tuple[int, str, str, str]:
         return self.create_note()
 
     def del_note(self):
