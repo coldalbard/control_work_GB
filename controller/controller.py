@@ -15,6 +15,9 @@ class Controller:
     def read_note(self):
         print(self.service.read_note(self.view.read_note()))
 
+    def read_all_notes(self):
+        self.view.read_all_notes(self.service.notes)
+
     def update_note(self):
         self.service.update_note(self.view.update_note())
         print("The record has been updated")
