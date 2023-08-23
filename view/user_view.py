@@ -2,6 +2,10 @@ from datetime import datetime
 
 
 class View:
+
+    def __init__(self):
+        pass
+
     def main_Page(self) -> int:
         action = int(input('1 - create a note\n'
                            '2 - read the note\n'
@@ -17,15 +21,16 @@ class View:
     def create_note(self) -> tuple[int, str, str, str]:
         title = input("Enter a title: ")
         text = input("Enter a note: ")
-        date = datetime.today().strftime("%d%m%Y")
+        date = datetime.today().strftime("%d.%m.%Y")
         return 1, title, text, date
 
     def read_note(self) -> int:
         search_id = int(input("Enter the id of the note to search for: "))
         return search_id
 
-    def update_note(self) -> tuple[int, str, str, str]:
-        return self.create_note()
+    def update_note(self):
+        update_id = int(input("Enter the ID of the record you want to change: "))
+        return update_id, self.create_note()
 
     def del_note(self):
         search_id = int(input("Enter the id of the note to delete: "))

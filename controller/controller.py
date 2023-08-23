@@ -1,3 +1,4 @@
+from model.json_model import ModelJson
 from model.note import Note
 from service.user_service import UserService
 from view.user_view import View
@@ -9,7 +10,8 @@ class Controller:
         self.view = view
 
     def create_note(self):
-        self.service.create_note(Note(self.view.create_note()))
+        id, date, title, text = self.view.create_note()
+        self.service.create_note(Note(id, date, title, text))
         print("Entry added")
 
     def read_note(self):
@@ -19,7 +21,8 @@ class Controller:
         self.view.read_all_notes(self.service.notes)
 
     def update_note(self):
-        self.service.update_note(self.view.update_note())
+        update_id, note = self.view.update_note()
+        self.service.update_note(update_id, note)
         print("The record has been updated")
 
     def del_note(self):
@@ -29,3 +32,8 @@ class Controller:
     def del_all_notes(self):
         self.service.delete_all_notes()
         print("All entries have been deleted")
+
+
+c = Controller(UserService(list(), ModelJson("test.json")), View())
+c.create_note()
+c.read_note()

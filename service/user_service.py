@@ -1,4 +1,4 @@
-from data_service import DataService
+from service.data_service import DataService
 from model.note import Note
 from model.base_file import BaseFile
 

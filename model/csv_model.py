@@ -7,6 +7,7 @@ class ModelCsv(BaseFile):
 
     def __init__(self, file_name: str):
         super().__init__(file_name)
+        self.notes = list()
 
     def read_file(self):
         notes_list = list()

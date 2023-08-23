@@ -1,5 +1,5 @@
 class Note:
-    def __init__(self, id: int, title: str, text: str, date: str):
+    def __init__(self, id: int, title: str, text: str, date):
         self.__id: int = id
         self.__title: str = title
         self.__text: str = text
