@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc86cb86-4b34-4086-b025-2acd46896cd5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/controller/controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/user_view.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/data_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/data_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/user_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/user_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/user_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/user_view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +40,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "controller",
+    "git-widget-placeholder": "view",
     "last_opened_file_path": "D:/gb/control_work",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -65,7 +63,7 @@
       <workItem from="1692723899004" duration="10223000" />
       <workItem from="1692742890504" duration="2379000" />
       <workItem from="1692806931493" duration="113000" />
-      <workItem from="1692807567218" duration="4261000" />
+      <workItem from="1692807567218" duration="5007000" />
     </task>
     <servers />
   </component>
