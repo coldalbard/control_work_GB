@@ -39,7 +39,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "service",
-    "last_opened_file_path": "D:/test",
+    "last_opened_file_path": "D:/gb/control_work",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,6 +61,7 @@
       <workItem from="1692723899004" duration="10223000" />
       <workItem from="1692742890504" duration="2379000" />
       <workItem from="1692806931493" duration="113000" />
+      <workItem from="1692807567218" duration="300000" />
     </task>
     <servers />
   </component>
