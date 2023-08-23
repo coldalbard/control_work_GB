@@ -13,11 +13,6 @@ class DataService(ABC):
         pass
 
     @abstractmethod
-
-    def read_all_notes(self):
-        pass
-
-    @abstractmethod
     def update_note(self, note, search_id):
         pass
 

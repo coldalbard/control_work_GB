@@ -25,9 +25,6 @@ class UserService(DataService):
             else:
                 print("The record was not found,\n the index may be incorrectly specified")
 
-    def read_all_notes(self):
-        for note in self.notes:
-            print(note)
 
     def update_note(self, note, search_id):
         for item in self.notes:
