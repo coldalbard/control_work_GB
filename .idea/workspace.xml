@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc86cb86-4b34-4086-b025-2acd46896cd5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/view/user_view.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +39,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "service",
-    "last_opened_file_path": "D:/test",
+    "git-widget-placeholder": "view",
+    "last_opened_file_path": "D:/gb/control_work",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,6 +62,7 @@
       <workItem from="1692723899004" duration="10223000" />
       <workItem from="1692742890504" duration="2379000" />
       <workItem from="1692806931493" duration="113000" />
+      <workItem from="1692807567218" duration="2865000" />
     </task>
     <servers />
   </component>
