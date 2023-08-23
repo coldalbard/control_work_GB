@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc86cb86-4b34-4086-b025-2acd46896cd5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/service/data_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/user_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +39,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "service",
-    "last_opened_file_path": "D:/gb/control_work",
+    "last_opened_file_path": "D:/test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -62,7 +59,8 @@
       <workItem from="1692134803732" duration="3769000" />
       <workItem from="1692628645357" duration="43000" />
       <workItem from="1692723899004" duration="10223000" />
-      <workItem from="1692742890504" duration="2071000" />
+      <workItem from="1692742890504" duration="2379000" />
+      <workItem from="1692806931493" duration="113000" />
     </task>
     <servers />
   </component>
