@@ -14,17 +14,17 @@ class View:
                            'Select an action: '))
         return action
 
-    def create_note(self) -> tuple[str, str, str]:
+    def create_note(self) -> tuple[int, str, str, str]:
         title = input("Enter a title: ")
         text = input("Enter a note: ")
         date = datetime.today().strftime("%d%m%Y")
-        return title, text, date
+        return 1, title, text, date
 
     def read_note(self) -> int:
         search_id = int(input("Enter the id of the note to search for: "))
         return search_id
 
-    def update_note(self) -> tuple[str, str, str]:
+    def update_note(self) -> tuple[id, str, str, str]:
         return self.create_note()
 
     def del_note(self):
