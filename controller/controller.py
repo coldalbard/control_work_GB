@@ -26,12 +26,18 @@ class Controller:
 
     def update_note(self):
         update_id, note = self.view.update_note()
-        self.service.update_note(update_id, note)
-        print("The record has been updated")
+        check_id = self.service.update_note(Note(note[0], note[1], note[2], note[3]), update_id)
+        if check_id:
+            print("The record has been updated")
+        else:
+            print("Couldn't find a record with this id")
 
     def del_note(self):
-        self.service.delete_note(self.view.del_note())
-        print("Record deleted")
+        check_id = self.service.delete_note(self.view.del_note())
+        if check_id:
+            print("Record deleted")
+        else:
+            print("Couldn't find a record with this id")
 
     def del_all_notes(self):
         self.service.delete_all_notes()
