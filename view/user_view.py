@@ -23,7 +23,7 @@ class View:
     def create_note(self) -> tuple[int, str, str, str]:
         title = input("Enter a title: ")
         text = input("Enter a note: ")
-        date = datetime.today().strftime("%d.%m.%Y")
+        date = datetime.today().strftime("%H:%M %d-%m-%Y")
         return 1, title, text, date
 
     def read_note(self) -> int:
