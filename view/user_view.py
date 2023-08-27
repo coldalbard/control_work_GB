@@ -7,6 +7,7 @@ class View:
         pass
 
     def main_Page(self) -> int:
+        print()
         action = int(input('1 - create a note\n'
                            '2 - read the note\n'
                            '3 - update a note\n'
@@ -16,6 +17,7 @@ class View:
                            '7 - save to file\n'
                            '8 - exit\n' +
                            'Select an action: '))
+        print()
         return action
 
     def create_note(self) -> tuple[int, str, str, str]:
@@ -37,14 +39,13 @@ class View:
         return search_id
 
     def read_all_notes(self, notes: list):
-        print()
         print("All notes: ")
         for note in notes:
             print(note)
 
     def file_save(self):
         file_format = input("Enter the format you want to save to (JSON, CSV): ").lower()
-        if file_format != "json" or file_format != "csv" or not file_format:
+        if file_format != "json" and file_format != "csv" or not file_format:
             file_format = "json"
         file_name = input("Enter the file name: ")
         if not file_name:
