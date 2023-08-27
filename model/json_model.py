@@ -1,12 +1,13 @@
 import json
-from note import Note
-from base_file import BaseFile
+from model.note import Note
+from model.base_file import BaseFile
 
 
 class ModelJson(BaseFile):
 
     def __init__(self, file_name: str):
         super().__init__(file_name)
+        self.notes = list()
 
     def read_file(self):
         notes_list = list()
