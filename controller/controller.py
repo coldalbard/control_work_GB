@@ -1,3 +1,4 @@
+from model.csv_model import ModelCsv
 from model.json_model import ModelJson
 from model.note import Note
 from service.user_service import UserService
@@ -8,6 +9,9 @@ class Controller:
     def __init__(self, service: UserService, view: View):
         self.service = service
         self.view = view
+
+    def main_page(self) -> int:
+        return self.view.main_Page()
 
     def create_note(self):
         id, date, title, text = self.view.create_note()
@@ -33,7 +37,11 @@ class Controller:
         self.service.delete_all_notes()
         print("All entries have been deleted")
 
-
-c = Controller(UserService(list(), ModelJson("test.json")), View())
-c.create_note()
-c.read_note()
+    def file_save(self):
+        path = self.view.file_save()
+        if path.endswith(".json"):
+            serv = UserService(ModelJson(path))
+            serv.model.write_file(self.service.notes)
+        else:
+            serv = UserService(ModelCsv(path))
+            serv.model.write_file(self.service.notes)

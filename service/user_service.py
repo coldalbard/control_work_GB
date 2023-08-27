@@ -5,9 +5,9 @@ from model.base_file import BaseFile
 
 class UserService(DataService):
 
-    def __init__(self, notes: list, model: BaseFile):
-        self.notes = notes
+    def __init__(self, model: BaseFile):
         self.model = model
+        self.notes = self.model.read_file()
 
     def create_note(self, note: Note):
         for item in self.notes:
