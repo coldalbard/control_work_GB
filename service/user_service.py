@@ -10,11 +10,9 @@ class UserService(DataService):
         self.model = model
 
     def create_note(self, note: Note):
-        id = 0
         for item in self.notes:
-            if item.id > id:
-                id = item.id
-        note.id = id + 1
+            if item.id == note.id:
+                note.id = item.id + 1
         self.notes.append(note)
         self.model.write_file(self.notes)
 
