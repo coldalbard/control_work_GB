@@ -7,7 +7,6 @@ class ModelJson(BaseFile):
 
     def __init__(self, file_name: str):
         super().__init__(file_name)
-        self.notes = list()
 
     def read_file(self):
         notes_list = list()
@@ -21,10 +20,10 @@ class ModelJson(BaseFile):
 
             return notes_list
         except FileNotFoundError:
-            return self.notes
+            return list()
 
     def write_file(self, notes: list):
-        json_strings_list = self.notes
+        json_strings_list = list()
         for note in notes:
             json_strings_list.append({'id': note.id, 'date': note.date, 'title': note.title, 'text': note.text})
 
