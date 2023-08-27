@@ -6,7 +6,7 @@ from view.user_view import View
 
 def run():
     print("Welcome to the notes app!")
-    c = Controller(UserService(ModelJson("/data_base.json")), View())
+    c = Controller(UserService(ModelJson("data_base.json")), View())
     while True:
         action = c.main_page()
         match action:
@@ -27,6 +27,3 @@ def run():
             case 8:
                 print("All the best!")
                 break
-
-
-run()
