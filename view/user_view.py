@@ -2,7 +2,12 @@ from datetime import datetime
 
 
 class View:
+
+    def __init__(self):
+        pass
+
     def main_Page(self) -> int:
+        print()
         action = int(input('1 - create a note\n'
                            '2 - read the note\n'
                            '3 - update a note\n'
@@ -12,34 +17,35 @@ class View:
                            '7 - save to file\n'
                            '8 - exit\n' +
                            'Select an action: '))
+        print()
         return action
 
-    def create_note(self) -> tuple[str, str, str]:
+    def create_note(self) -> tuple[int, str, str, str]:
         title = input("Enter a title: ")
         text = input("Enter a note: ")
-        date = datetime.today().strftime("%d%m%Y")
-        return title, text, date
+        date = datetime.today().strftime("%d.%m.%Y")
+        return 1, title, text, date
 
     def read_note(self) -> int:
         search_id = int(input("Enter the id of the note to search for: "))
         return search_id
 
-    def update_note(self) -> tuple[str, str, str]:
-        return self.create_note()
+    def update_note(self):
+        update_id = int(input("Enter the ID of the record you want to change: "))
+        return update_id, self.create_note()
 
     def del_note(self):
         search_id = int(input("Enter the id of the note to delete: "))
         return search_id
 
     def read_all_notes(self, notes: list):
-        print()
         print("All notes: ")
         for note in notes:
             print(note)
 
     def file_save(self):
         file_format = input("Enter the format you want to save to (JSON, CSV): ").lower()
-        if file_format != "json" or file_format != "csv" or not file_format:
+        if file_format != "json" and file_format != "csv" or not file_format:
             file_format = "json"
         file_name = input("Enter the file name: ")
         if not file_name:

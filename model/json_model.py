@@ -1,6 +1,6 @@
 import json
-from note import Note
-from base_file import BaseFile
+from model.note import Note
+from model.base_file import BaseFile
 
 
 class ModelJson(BaseFile):
@@ -20,10 +20,10 @@ class ModelJson(BaseFile):
 
             return notes_list
         except FileNotFoundError:
-            return self.notes
+            return list()
 
     def write_file(self, notes: list):
-        json_strings_list = self.notes
+        json_strings_list = list()
         for note in notes:
             json_strings_list.append({'id': note.id, 'date': note.date, 'title': note.title, 'text': note.text})
 
